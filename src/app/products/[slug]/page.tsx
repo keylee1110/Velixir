@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
@@ -106,16 +107,16 @@ export default async function ProductPage({ params }: PageProps) {
   return (
     <>
       <AnnouncementBar />
-      <Header transparent={false} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
+      <Header forceSolid={true} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
 
       <main className="flex-grow pt-32 pb-24 bg-primary-black overflow-hidden">
         {/* Main Product Section */}
         <section className="px-6 md:px-12 max-w-7xl mx-auto mb-24 md:mb-32">
           {/* Breadcrumbs */}
           <div className="flex gap-2 items-center text-[0.6rem] tracking-[0.2em] font-sans text-muted-gray uppercase mb-8">
-            <a href="/" className="hover:text-ivory transition-colors">Home</a>
+            <Link href="/" className="hover:text-ivory transition-colors">Home</Link>
             <span>/</span>
-            <a href="/fragrances" className="hover:text-ivory transition-colors">Fragrances</a>
+            <Link href="/fragrances" className="hover:text-ivory transition-colors">Fragrances</Link>
             <span>/</span>
             <span className="text-champagne-gold">{product.name}</span>
           </div>

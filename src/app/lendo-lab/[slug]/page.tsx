@@ -180,7 +180,7 @@ export default async function ArticleDetailPage({ params }: PageProps) {
   return (
     <>
       <AnnouncementBar />
-      <Header transparent={false} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
+      <Header forceSolid={true} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
 
       <main className="flex-grow pt-32 pb-24 bg-primary-black overflow-hidden">
         <article className="max-w-4xl mx-auto px-6">

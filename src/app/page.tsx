@@ -73,7 +73,7 @@ export default async function Home() {
   return (
     <>
       <AnnouncementBar />
-      <Header transparent={true} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
+      <Header forceSolid={false} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
       
       <main className="flex-grow">
         {/* Cinematic Hero */}

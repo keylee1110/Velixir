@@ -16,7 +16,7 @@ interface HeroVideoProps {
 export default function HeroVideo({
   heroTitle = "Redefining Luxury",
   heroSubtitle = "VELIXIR PARFUMS",
-  heroVideo = "/videos/hero.mp4",
+  heroVideo = "/video/video%20draft%20hero%20section.mp4",
   heroPoster,
   heroPrimaryCTA = { text: "Discover Collection", link: "/fragrances" },
   heroSecondaryCTA = { text: "Shop on Shopee", link: "https://shopee.vn/" },

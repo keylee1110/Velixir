@@ -87,7 +87,7 @@ export default async function PolicyPage() {
   return (
     <>
       <AnnouncementBar />
-      <Header transparent={false} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
+      <Header forceSolid={true} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
 
       <main className="flex-grow pt-24 bg-primary-black overflow-hidden">
         {/* Page Hero */}

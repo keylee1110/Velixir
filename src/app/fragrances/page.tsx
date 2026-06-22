@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Link from "next/link";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import FragranceCollection from "@/components/FragranceCollection";
@@ -39,7 +40,7 @@ export default async function FragrancesPage() {
   return (
     <>
       <AnnouncementBar />
-      <Header transparent={false} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
+      <Header forceSolid={true} shopeeUrl={shopeeUrl} tiktokUrl={tiktokUrl} />
 
       <main className="flex-grow pt-24 overflow-hidden">
         {/* Page Hero/Header */}
@@ -47,7 +48,7 @@ export default async function FragrancesPage() {
           <ScrollReveal direction="up" distance={30} className="max-w-3xl mx-auto flex flex-col items-center">
             {/* Breadcrumb style path */}
             <div className="flex gap-2 items-center text-[0.6rem] tracking-[0.2em] font-sans text-muted-gray uppercase mb-6">
-              <a href="/" className="hover:text-ivory transition-colors">Home</a>
+              <Link href="/" className="hover:text-ivory transition-colors">Home</Link>
               <span>/</span>
               <span className="text-champagne-gold">Fragrances</span>
             </div>
